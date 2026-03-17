@@ -1,38 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>WTS Project</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WTS Project</title>
 
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial;
-      background: black;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      height: 100vh;
       color: white;
       text-align: center;
+
+      /* 🔥 КРАСИВЫЙ ФОН */
+      background: radial-gradient(circle at 20% 30%, #1a1a2e, #000000 70%),
+                  radial-gradient(circle at 80% 70%, #16213e, transparent 70%);
+      background-color: #000;
     }
 
     .container {
-      margin-top: 100px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
     h1 {
-      margin-bottom: 30px;
+      font-size: 34px;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
     }
 
     .btn {
       display: block;
-      width: 260px;
-      margin: 15px auto;
-      padding: 15px;
-      border-radius: 15px;
-      background: #222;
+      width: 270px;
+      margin: 18px auto;
+      padding: 16px;
+      border-radius: 18px;
+
+      /* 💎 стекло */
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+
       color: white;
       text-decoration: none;
       font-size: 18px;
+
+      transition: all 0.3s ease;
     }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(255,255,255,0.2);
+    }
+
   </style>
 </head>
 

@@ -1,45 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WTS Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
     body {
-      height: 100vh;
+      margin: 0;
+      font-family: Arial;
+      background: black;
       color: white;
       text-align: center;
-
-      /* КРАСИВЫЙ ФОН */
-      background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #000000);
-      background-size: 400% 400%;
-      animation: gradientMove 10s ease infinite;
-    }
-
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
     }
 
     .container {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
+      margin-top: 100px;
     }
 
     h1 {
-      font-size: 32px;
       margin-bottom: 30px;
-      letter-spacing: 2px;
     }
 
     .btn {
@@ -48,17 +28,10 @@
       margin: 15px auto;
       padding: 15px;
       border-radius: 15px;
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(10px);
+      background: #222;
       color: white;
       text-decoration: none;
       font-size: 18px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: rgba(255,255,255,0.2);
-      transform: scale(1.03);
     }
   </style>
 </head>
